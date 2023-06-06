@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy List</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+<body>
+    <section class="center">
+        <section class="wrapper">
+            <section class="block">
+                <section class="search elementOfBlock">
+                    <input class="searchInput" type="text" placeholder="  Назва товару">
+                    <button class="tooltipBottom" data-tooltip="Кнопка додавання товару" type="button">Додати</button>
+                </section>
+                <section class="elementOfBlock">
+                    <input style="text-decoration:line-through;" class="nameInput" type="text" value="Помідори" />
+                    <label class="labelOfCount">2</label>
+                    <button class="boughtButton tooltip" data-tooltip="Товар не куплено" type="button">Не куплено</button>
+                </section>
+                <section class="elementOfBlock">
+                    <input class="nameInput" type="text" value="Печиво" />
+                    <form class="formForCount">
+                        <button class="decreaseButtons increaseDecreaseButtons tooltip" data-tooltip="Зменшити кількість" type="button">-</button>
+                        <label class="labelOfCount">2</label>
+                        <button class="increaseButtons increaseDecreaseButtons tooltip" data-tooltip="Збільшити кількість" type="button">+</button>
+                    </form>
+                    <form>
+                        <button class="boughtButton tooltip" data-tooltip="Товар куплено" type="button">Куплено</button>
+                        <button class="cancelButton tooltip" data-tooltip="Відмінити" type="button">x</button>
+                    </form>
+                </section>
+                <section class="elementOfBlock">
+                    <input class="nameInput" type="text" value="Сир" />
+                    <form class="formForCount">
+                        <button class="decreaseUnableButtons increaseDecreaseButtons tooltip" data-tooltip="Зменшити кількість" type="button">-</button>
+                        <label class="labelOfCount tooltip">1</label>
+                        <button class="increaseButtons increaseDecreaseButtons tooltip" data-tooltip="Збільшити кількість" type="button">+</button>
+                    </form>
+                    <form>
+                        <button class="boughtButton tooltip" data-tooltip="Товар куплено" type="button">Куплено</button>
+                        <button class="cancelButton tooltip" data-tooltip="Відмінити" type="button">x</button>
+                    </form>
+                </section>
+            </section>
+            <section class="block block2">
+                <section class="elementOfBlock">
+                    <label class="labelOfBlock2">Залишилося</label>
+                </section>
+                <section class="elementOfBlock boughtSpan">
+                    <span class="product-item">
+	                    Печиво
+	                    <span class="amount">2</span>
+                    </span>
+                    <span class="product-item-with-margin product-item">
+	                    Сир
+	                    <span class="amount">1</span>
+                    </span>
+                </section>
+                <section class="elementOfBlock">
+                    <label class="labelOfBlock2">Куплено</label>
+                </section>
+                <section class="elementOfBlock boughtSpan">
+                    <span class="product-item">
+                        <del>Помідор</del>
+	                    <span style="text-decoration:line-through;" class="amount">2</span>
+                    </span>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="badge">
+        <article>
+            <label class="author">Created by:</label> <br />
+            <label>Oleksandr Semytskyi</label> <br />
+        </article>
+    </section>
+</body>
+</html>
